@@ -2,10 +2,12 @@ import "./App.css";
 import allCountryScores from "./scores.js";
 
 function App() {
+  // alphabetical name sorting
   const sortedCountryScores = allCountryScores.sort((a, b) =>
     a.name.localeCompare(b.name)
   );
 
+  // numerical score sorting
   let sortedScores = sortedCountryScores.map((country) => ({
     // for each country object, a new object is created using object spread ({ ...country }), to create a shallow copy of the country object (so OG sortedCountryScores[] isn't changed)
     ...country,

@@ -8,6 +8,7 @@ let allCountryScores = [
       { n: "Hanif", s: 999999999 },
     ],
   },
+
   {
     name: "Scotland",
     scores: [
